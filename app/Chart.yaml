@@ -1,0 +1,9 @@
+apiVersion: v2
+name: my-app
+description: This chart installs my-app by ArgoCD
+version: 1.0.0
+
+dependencies:
+- name: nginx
+  repository: 'https://rachunc.github.io/helm-charts'
+  version: 0.x.x
