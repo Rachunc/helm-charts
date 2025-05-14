@@ -5,7 +5,7 @@ Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
 
-helm repo add <alias> https://rachunc.github.io/helm-charts
+helm repo add `<alias>` https://rachunc.github.io/helm-charts
 
 If you had already added this repo earlier, run `helm repo update` to retrieve
 the latest versions of the packages.  You can then run `helm search repo
@@ -13,8 +13,12 @@ the latest versions of the packages.  You can then run `helm search repo
 
 To install the <chart-name> chart:
 
-    helm install my-<chart-name> <alias>/<chart-name>
+```shell
+helm install my-<chart-name> <alias>/<chart-name>
+```    
 
 To uninstall the chart:
 
-    helm uninstall my-<chart-name>
+```shell
+helm uninstall my-<chart-name>
+```
