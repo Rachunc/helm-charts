@@ -1,0 +1,6 @@
+dependencies:
+- name: nginx
+  repository: https://rachunc.github.io/helm-charts
+  version: 0.1.3
+digest: sha256:60a0842a6ce7cd29ef4dfd1c3cdcc737c8af89f15fdc39262c98b6889aa44d15
+generated: "2025-05-15T07:58:48.298293Z"
