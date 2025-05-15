@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   nginx:
   - apiVersion: v2
+    appVersion: latest
+    created: "2025-05-15T11:33:15.74942972Z"
+    description: A Helm chart for Kubernetes
+    digest: ed1ffb546ec200e1606aa5d581ce25bd8e35bfbdcfca470e2e8652e143d1a582
+    name: nginx
+    type: application
+    urls:
+    - https://github.com/Rachunc/helm-charts/releases/download/nginx-0.1.4/nginx-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
     appVersion: 1.28.0-otel
     created: "2025-05-15T07:56:03.885757005Z"
     description: A Helm chart for Kubernetes
@@ -42,4 +52,4 @@ entries:
     urls:
     - https://github.com/Rachunc/helm-charts/releases/download/redis-0.1.0/redis-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-15T07:56:03.8857703Z"
+generated: "2025-05-15T11:33:15.749444317Z"
