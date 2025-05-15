@@ -28,11 +28,11 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 
-      - name: Prefix all release titles with "Helm chart"
+      - name: Add auto-generated release notes
         run: |
           for tgz in .cr-release-packages/*.tgz; do
-            release_name=$(basename "$tgz" .tgz)
-            gh release edit "$release_name" --title "Helm chart $release_name"
+            tag=$(basename "$tgz" .tgz)
+            gh release edit "$tag" --generate-notes
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
