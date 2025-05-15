@@ -27,3 +27,12 @@ jobs:
           charts_dir: helm
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Prefix all release titles with "Helm chart"
+        run: |
+          for tgz in .cr-release-packages/*.tgz; do
+            release_name=$(basename "$tgz" .tgz)
+            gh release edit "$release_name" --title "Helm chart $release_name"
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
