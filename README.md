@@ -22,3 +22,5 @@ To uninstall the chart:
 ```shell
 helm uninstall my-<chart-name>
 ```
+
+What to do
